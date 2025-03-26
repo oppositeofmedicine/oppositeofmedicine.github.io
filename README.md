@@ -1,1 +1,1 @@
-# Circle Of Sound Records
+# Opposite Of Medicine Records
