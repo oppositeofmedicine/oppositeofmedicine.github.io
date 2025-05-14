@@ -1,125 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=800, initial-scale=1.0">
-    <title>OOM Records - Home</title>
-    <style>
-        @font-face {
-            font-family: 'MyCustomFont';
-            src: url('Modest.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'MyCustomFont2';
-            src: url('Crass.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: 'MyCustomFont3';
-            src: url('typewriter.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-        }
-        .sidebar {
-            width: 125px;
-            background-color: #111;
-            color: #fff;
-            height: 100%;
-            position: fixed;
-            padding: 20px 10px;
-            box-sizing: border-box;
-        }
-        .sidebar h1 {
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0px;
-        }
-        .sidebar ul li {
-            margin: 15px 0;
-        }
-        .sidebar ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            display: block;
-            text-align: center;
-        }
-        .sidebar ul li a:hover {
-            background-color: #444;
-            border-radius: 0px;
-            padding: 0px 0;
-        }
-        .content {
-            margin-left: 125px;
-            padding: 20px;
-            flex-grow: 1;
-        }
-        .content h2 {
-            font-size: 24px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .news-item {
-            margin-bottom: 20px;
-        }
-        .news-item h3 {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .news-item p {
-            line-height: 1.6;
-        }
-      h1 {
-        font-size: 50px;
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opposite Of Medicine Records</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f8f8f8;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 0.8em;
+      color: #444;
+    }
+
+    nav {
+      background-color: #000;
+      color: #fff;
+      padding: 11px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 20px;
+    }
+
+    .side-images {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .side-images img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      background-color: #fff;
+      margin: 0 20px;
+    }
+
+    .news-item {
+      margin-bottom: 30px;
+    }
+
+    .news-item h2 {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+    }
+
+    .news-item .date {
+      font-size: 0.9em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .bottom {
+      border-style: solid;
+      border-width: 2px;
+    }
+  </style>
 </head>
 <body>
-    <div class="sidebar">
-        <font face="MyCustomFont3"><h1>OOM Records</h1>
-        <ul>
-            <li><a href="index.html#">Home</a></li>
-            <li><a href="music.html#">Music</a></li>
-            <li><a href="artists.html#">Artists</a></li>
-            <li><a href="events.html#">Events</a></li>
-            <li><a href="contact.html#">Contact</a></li>
-      </ul></font>
+  <header>
+    <img src="images/logo.png" alt="Opposite Of Medicine Records Logo" />
+    <div>
+      <h1>OPPOSITE OF MEDICINE RECORDS</h1>
+      <p>The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply Records</p>
     </div>
-    <div class="content">
-<center><h1><u><font face="MyCustomFont3">Opposite Of Medicine Records</u><br><font size="4">'The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply'</font></font></h1></center>
-<!--<a href=""><img src="#" width="100%"></a>-->
-        <h2>News</h2>
-	<div class="news-item">
-            <h3>(03/01/25) Created Website</h3>
-            <p>The site has now been created. Expect some minor updates soon.</p>
-        </div>
-        <div class="news-item">
-            <h3></h3>
-            <p></p>
-        </div>
+  </header>
 
-	<h2></h2>
-        <h2><br><br>Info</h2>
-        <div class="news-item">
-            <h3>What Is OOM?</h3>
-            <p>Opposite Of Medicine (short for 'The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply') Records is a DIY label from Onaway, Michigan. It was originally Circle Of Sound Records before that shut down.</p>
-        </div>
-	    
-	<h2></h2>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="releases.html">RELEASES</a>
+    <a href="artists.html">ARTISTS</a>
+    <a href="events.html">EVENTS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="assets.html">ASSETS</a>
+  </nav>
+
+  <div class="main-container">
+    <div class="side-images" id="left-images"></div>
+
+    <div class="content">
+      <div class="news-item">
+        <h2>New Release Announced</h2>
+        <div class="date">May 14, 2025</div>
+        <p>Necrotic Desires plans to release a promo CD soon. This CD will feature two rerecorded tracks from A For Anal and 7 new tracks, with one being a part 2 of 'Obligatory Structured Song'.</p>
+      </div>
+
+      <div class="news-item">
+        <h2>Major Site Update</h2>
+        <div class="date">May 14, 2025</div>
+        <p>The site has been entirely redesigned once again. Along with new designs, there's a new assets page where you can download resources to make your own copies of our music. Also note that this isn't the final design of the page. Expect more color and pictures soon.</p>
+      </div>
+
+      <div class="news-item">
+        <h2>New Release Out</h2>
+        <div class="date">April 24, 2025</div>
+        <p>Necrotic Desires' new EP, A For Anal, has now been released. Expect it to appear on most platforms soon, but in the meantime you can just listen to it straight from here.</p>
+      </div>
+
+      <div class="news-item">
+        <h2>You Suffer Zine, Issue #1</h2>
+        <div class="date">March 28, 2025</div>
+        <img src="https://punkarchives.github.io/yousuffer1.png" width=400px>
+      </div>
+
+      <div class="news-item">
+        <h2>Site Launched</h2>
+        <div class="date">March 1, 2025</div>
+      </div>
+
+      <div class="news-item">
+        <h2>What Is OOM?</h2>
+        <div class="date">N/A</div>
+        <p>Opposite Of Medicine Records (short for "The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply Records") is a DIY label from Northern-Michigan, founded in 2025. While it's currently just a platform for me and my friends to release music, I plan to grow the label so I can actually help small bands.</p>
+      </div>
+    </div>
+
+    <div class="side-images" id="right-images"></div>
+  </div>
+
+  <script>
+    const imageList = [
+      'https://firstbenefits.org/wp-content/uploads/2017/10/placeholder.png',
+      'https://www.svgrepo.com/show/508699/landscape-placeholder.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIC25nqru3yN9lhtoTwdBWt_u0QlOcPzw3Bw&s',
+      'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png'
+    ];
+
+    function getRandomImages(count) {
+      const shuffled = [...imageList].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0, count);
+    }
+
+    function populateSideImages(containerId, count = 4) {
+      const container = document.getElementById(containerId);
+      const images = getRandomImages(count);
+      images.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Decorative';
+        container.appendChild(img);
+      });
+    }
+
+    populateSideImages('left-images', 4);
+    populateSideImages('right-images', 4);
+  </script>
+
 </body>
 </html>

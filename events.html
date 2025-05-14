@@ -1,103 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOM Records - Events</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-        }
-        @font-face {
-            font-family: 'MyCustomFont3';
-            src: url('typewriter.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        .sidebar {
-            width: 125px;
-            background-color: #111;
-            color: #fff;
-            height: 100%;
-            position: fixed;
-            padding: 20px 10px;
-            box-sizing: border-box;
-        }
-        .sidebar h1 {
-            font-size: 18px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            margin: 15px 0;
-        }
-        .sidebar ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            display: block;
-            text-align: center;
-        }
-        .sidebar ul li a:hover {
-            background-color: #444;
-            border-radius: 0px;
-            padding: 0px 0;
-        }
-        .content {
-            margin-left: 125px;
-            padding: 20px;
-            flex-grow: 1;
-        }
-        .content h2 {
-            font-size: 24px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .news-item {
-            margin-bottom: 20px;
-        }
-        .news-item h3 {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .news-item p {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | Opposite Of Medicine Records</title>
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f8f8f8;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #000;
+      padding: 10px;
+    }
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    header p {
+      margin: 0;
+      font-size: 0.8em;
+      color: #444;
+    }
+    nav {
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #fff;
+    }
+    .event {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+    .event img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+    }
+    .event-info h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .event-info p {
+      margin: 5px 0;
+      font-size: 0.95em;
+    }
+    .event-info .price {
+      font-style: italic;
+      color: #333;
+    }
+    .event-info a {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="sidebar">
-        <font face="MyCustomFont3"><h1>OOM Records</h1>
-        <ul>
-            <li><a href="index.html#">Home</a></li>
-            <li><a href="music.html#">Music</a></li>
-            <li><a href="artists.html#">Artists</a></li>
-            <li><a href="events.html#">Events</a></li>
-            <li><a href="contact.html#">Contact</a></li>
-      </ul></font>
+  <header>
+    <img src="images/logo.png" alt="Opposite Of Medicine Records Logo" />
+    <div>
+      <h1>OPPOSITE OF MEDICINE RECORDS</h1>
+      <p>The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply Records</p>
     </div>
-    <div class="content">
-        <h2>Events</h2>
-        <div class="news-item">
-            <h3><u>Event:</u> N/A</h3>
-            <h3><u>Date:</u> MM/DD/YY</h3>
-            <h3><u>Time:</u> 00:00 PM</h3>
-            <h3><u>Location:</u> N/A</h3>
-            <h3><u>Entry:</u> $0</h3>
-            <p>Band 1 | Band 2 | Band 3</p>
-	    <img src="postertemplate.png" width="200px">
-        </div>
-        <h2></h2>
-        <h2>Previous Events</h2>
+  </header>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="releases.html">RELEASES</a>
+    <a href="artists.html">ARTISTS</a>
+    <a href="events.html">EVENTS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="assets.html">ASSETS</a>
+  </nav>
+  <div class="content">
+    <h2>EVENTS</h2>
+
+    <div class="event">
+      <img src="images/postertemplate.png" alt="Template Poster" />
+      <div class="event-info">
+        <h3>Template - N/A</h3>
+	<p>Featuring: Band, Band 2<p>
+        <p>MMM DD, YYYY<br>0:00 AM<br>Location</p>
+        <p class="price">$0 at the door</p>
+      </div>
     </div>
+
+  </div>
 </body>
 </html>
