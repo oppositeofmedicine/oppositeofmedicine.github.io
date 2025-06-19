@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=1000, user-scalable=yes">
   <title>Opposite Of Medicine Records</title>
   <style>
     body {
       font-family: 'Courier New', Courier, monospace;
-      background-color: #f8f8f8;
+      background-color: #fff8f8;
       color: #000;
       margin: 0;
       padding: 0;
@@ -17,7 +17,17 @@
       display: flex;
       align-items: center;
       padding: 10px;
-      background-color: #fff;
+      background-color: #fffff4;
+    }
+    
+    h2 {
+      color: #f44;
+      text-shadow: 1px 1px #aaa;
+    }
+       
+    h3 {
+      color: #d00;
+      text-shadow: 1px 1px #aaa;
     }
 
     header img {
@@ -72,6 +82,7 @@
     .side-images img {
       width: 100%;
       object-fit: contain;
+      border: 1px solid #000;
     }
 
     .content {
@@ -79,6 +90,46 @@
       max-width: 800px;
       background-color: #fff;
       margin: 0 20px;
+    }
+
+    .content-layout {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    .sidebar {
+      flex: 1;
+      border-left: 2px solid #000;
+      padding-left: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f8f8f8;
+      /*position: sticky;*/
+      top: 20px;
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      font-size: 1.1em;
+      border-bottom: 1px solid #000;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+
+    .sidebar ul {
+      list-style-type: square;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar li {
+      font-size: 0.9em;
+      margin-bottom: 8px;
     }
 
     .news-item {
@@ -100,6 +151,38 @@
       border-style: solid;
       border-width: 2px;
     }
+    
+    .featured-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.featured-release {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.featured-img {
+  width: 60px;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.featured-text a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.featured-text a:hover {
+  text-decoration: underline;
+}
+
   </style>
 </head>
 <body>
@@ -124,39 +207,76 @@
     <div class="side-images" id="left-images"></div>
 
     <div class="content">
-      <div class="news-item">
-        <h2>New Release Announced</h2>
-        <div class="date">May 14, 2025</div>
-        <p>Necrotic Desires plans to release a promo CD soon. This CD will feature two rerecorded tracks from A For Anal and 7 new tracks, with one being a part 2 of 'Obligatory Structured Song'.</p>
-      </div>
+      <div class="content-layout">
+        
+        <div class="main-content">
+          <font face="Arial"><div class="news-item">
+            <h2>New Single & Demo Announced</h2>
+            <div class="date">June 19, 2025</div>
+            <p>After Necrotic Desires plays their first show, they plan to release a single including the tracks "This Is The Improvised Explosive Device Dot Com!" and "When I Say Entirely Legal, I Mean Abortion After The Baby Is Born (Demo)"<br><br>Along with this, Weather Underground will be releasing a demo sometime soon.</p>
+          </div>
 
-      <div class="news-item">
-        <h2>Major Site Update</h2>
-        <div class="date">May 14, 2025</div>
-        <p>The site has been entirely redesigned once again. Along with new designs, there's a new assets page where you can download resources to make your own copies of our music. Also note that this isn't the final design of the page. Expect more color and pictures soon.</p>
-      </div>
+          <div class="news-item">
+            <h2>Major Site Update</h2>
+            <div class="date">May 14, 2025</div>
+            <p>The site has been entirely redesigned once again. Along with new designs, there's a new assets page where you can download resources to make your own copies of our music. Also note that this isn't the final design of the page. Expect more color and pictures soon.</p>
+          </div>
 
-      <div class="news-item">
-        <h2>New Release Out</h2>
-        <div class="date">April 24, 2025</div>
-        <p>Necrotic Desires' new EP, A For Anal, has now been released. Expect it to appear on most platforms soon, but in the meantime you can just listen to it straight from here.</p>
-      </div>
+          <div class="news-item">
+            <h2>New Release Out</h2>
+            <div class="date">April 24, 2025</div>
+            <p>Necrotic Desires' new EP, A For Anal, has now been released. Expect it to appear on most platforms soon, but in the meantime you can just listen to it straight from here.</p>
+          </div>
 
-      <div class="news-item">
-        <h2>You Suffer Zine, Issue #1</h2>
-        <div class="date">March 28, 2025</div>
-        <img src="https://punkarchives.github.io/yousuffer1.png" width=400px>
-      </div>
+          <div class="news-item">
+            <h2>You Suffer Zine, Issue #1</h2>
+            <div class="date">March 28, 2025</div>
+            <img src="https://punkarchives.github.io/assets/yousuffer1.png" width="400px">
+          </div>
 
-      <div class="news-item">
-        <h2>Site Launched</h2>
-        <div class="date">March 1, 2025</div>
-      </div>
+          <div class="news-item">
+            <h2>Site Launched</h2>
+            <div class="date">March 1, 2025</div>
+          </div>
 
-      <div class="news-item">
-        <h2>What Is OOM?</h2>
-        <div class="date">N/A</div>
-        <p>Opposite Of Medicine Records (short for "The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply Records") is a DIY label from Northern-Michigan, founded in 2025. While it's currently just a platform for me and my friends to release music, I plan to grow the label so I can actually help small bands.</p>
+          <div class="news-item">
+            <h2>What Is OOM?</h2>
+            <div class="date">N/A</div>
+            <p>Opposite Of Medicine Records (short for "The Opposite Of Have A Taste Of Your Own Medicine Is Don't Get High Off Your Own Supply Records") is a DIY label from Northern-Michigan, founded in 2025. While it's currently just a platform for me and my friends to release music, I plan to grow the label so I can actually help small bands.</p>
+          </div></font>
+        </div>
+
+        <aside class="sidebar">
+          <h3>Upcoming Events</h3>
+          <ul>
+            <li><strong>July ??:</strong> Necrotic Desires first show</li>
+          </ul>
+
+          <h3>Upcoming Releases</h3>
+          <ul>
+            <li><strong>Necrotic Desires:</strong> "This Is The Improvised Explosive Device Dot Com! (Single)"</li>
+            <li><strong>Weather Underground:</strong> "Revenge (Demo)"</li>
+          </ul>
+          
+          <h3>Featured Releases</h3>
+<ul class="featured-list">
+  <li class="featured-release">
+    <img src="images/necroticdesires1.png" alt="album cover" class="featured-img">
+      <a href="assets/ndafa.html"><div class="featured-text">
+        <strong>Necrotic Desires</strong><br>
+        A For Anal
+    </div></a>
+  </li>
+  <li class="featured-release">
+    <img src="images/necroticdesires0.jpg" alt="album cover" class="featured-img">
+      <a href="assets/ndud.html"><div class="featured-text">
+        <strong>Necrotic Desires</strong><br>
+        Demo
+    </div></a>
+  </li>
+</ul>
+
+        </aside>
       </div>
     </div>
 
@@ -165,11 +285,11 @@
 
   <script>
     const imageList = [
-      'https://firstbenefits.org/wp-content/uploads/2017/10/placeholder.png',
-      'https://www.svgrepo.com/show/508699/landscape-placeholder.svg',
-      'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIC25nqru3yN9lhtoTwdBWt_u0QlOcPzw3Bw&s',
-      'https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png'
+      'images/necroticdesires1.png',
+      'images/necroticdesires2.jpg',
+      'images/wxux1.jpg',
+      'images/necroticdesires0.jpg',
+      'images/logo.png'
     ];
 
     function getRandomImages(count) {
