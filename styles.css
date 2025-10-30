@@ -33,7 +33,7 @@
     height: 100vh;         /* full viewport height */
     object-fit: cover;     /* cover the area without stretching */
     z-index: 9999;         /* on top of everything */
-    opacity: 0.5;          /* semi-transparent */
+    opacity: 0.1;          /* semi-transparent */
     pointer-events: none;  /* allow clicks through to underlying content */
 }
 
